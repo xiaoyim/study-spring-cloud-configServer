@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-peer
+
+  cloud:
+    config:
+      name: eureka-peer
+      uri: http://localhost:5000
+
+  profiles:
+    active: dev
+  server:
+    port: 10000
