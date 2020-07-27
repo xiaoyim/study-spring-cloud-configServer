@@ -1,0 +1,20 @@
+server:
+  port: 5000
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        #如下是本地文件配置
+        native:
+          search-locations: classpath:/configs #配置文件存放的目录
+#        git:
+#          uri: F:\\program\\ideaWorkspace\\spring-cloud-eureka\\src\\main\\resources\\configs
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
